@@ -9,6 +9,6 @@ para celular*/
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: none !important;
+    background-size: cover;
   }
 }
