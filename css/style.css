@@ -1,0 +1,7 @@
+/*alinhamento do texto pagina em construção
+para celular*/
+@media screen and (max-width: 650px) {
+  .home-construction {
+    margin-top: -150px;
+  }
+}

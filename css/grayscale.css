@@ -302,3 +302,10 @@ a:focus, a:hover {
 footer {
   padding: 5rem 0;
 }
+
+
+@media screen and (max-width: 375px) {
+  .home-construction {
+    margin-top: -150px;
+  }
+}
