@@ -4,4 +4,11 @@ para celular*/
   .home-construction {
     margin-top: -180px;
   }
+  .masthead{
+    background: linear-gradient(to bottom,rgba(22,22,22,.1) 0,rgba(22,22,22,.5) 75%,#161616 100%),url(../img/novo-banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: none !important;
+  }
 }
