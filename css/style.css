@@ -5,8 +5,8 @@ para celular*/
     margin-top: -180px;
   }
   .masthead{
-    background: linear-gradient(to bottom,rgba(22,22,22,.1) 0,rgba(22,22,22,.5) 75%,#161616 100%),url(../img/banner-celular.png);
-    background-position: center;
+    background: linear-gradient(to bottom,rgba(22,22,22,.1) 0,rgba(22,22,22,.5) 75%,#161616 100%),url(../img/novo-banner.png);
+    background-position: unset !important;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
