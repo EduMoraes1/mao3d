@@ -12,3 +12,48 @@ para celular*/
     background-size: cover;
   }
 }
+
+
+/*ajuste text area do formulário de contato*/
+.textarea-form{
+  box-shadow: 0 .1875rem .1875rem 0 rgba(0,0,0,.1)!important;
+    padding: 1.25rem 2rem!important;
+    height: auto !important;
+    font-family: 'Varela Round'!important;
+    font-size: 80% !important;
+    text-transform: uppercase!important;
+    letter-spacing: .15rem!important;
+    border: 0!important;
+}
+
+
+/*
+alinhamento do form para celular*/
+@media screen and (max-width: 767px) and (min-width: 576px){
+  #emailform{
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 1119px) and (min-width: 768px){
+  #emailform{
+     margin-top: 25px;
+    width:130%;
+  }
+}
+
+@media screen and (max-width: 575px){
+  #msgform{
+    margin-top: 0px !important;
+  }
+  #btnform{
+    margin-top: 0px !important;
+  }
+}
+
+/*ajuste no texto quem somos para versão responsiva*/
+@media screen and (max-width: 991px){
+  #desc-obj{
+    margin-top: -40px !important;
+  }
+}

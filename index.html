@@ -25,6 +25,11 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="css/grayscale.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" />
+
+
+
   </head>
   <body id="page-top">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -94,7 +99,7 @@
               </div>
               <div class="col-lg-6" style="background: #6188a5;margin-left: -15px;padding: 15px;">
                 <br><br><br><br>
-                <p class="my-5 text-white">O nosso objetivo é melhorar a qualidade de vida das pessoas que precisam de protese de membro superior.</p>
+                <p class="my-5 text-white" id="desc-obj">O nosso objetivo é melhorar a qualidade de vida das pessoas que precisam de protese de membro superior.</p>
                 <!--p class="text-white">Você pode nos ajudar através de nossa campanha de financiamento coletivo no <a href="http://www.kickante.com.br/campanhas/projeto-mao-3d" target="_blank" style="color:#0a4440;">Kickante</a>, doando e divulgando.</p-->
               </div>
             </div>
@@ -107,9 +112,12 @@
         <div class="row">
           <div class="col-md-10 col-lg-8 mx-auto text-center">
             <h1 class="text-white mb-4">Fale Conosco</h1><br>
-            <form class="form-inline d-flex">
-              <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Digite seu e-mail...">
-              <button type="submit" class="btn btn-primary mx-auto button-contact">Enviar</button>
+            <form class="form-inline d-flex" action="send-email.php" method="post">
+              <input type="text" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" name="inputName" placeholder="Nome" required>
+              <input type="text" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" name="inputPhone" placeholder="Telefone">
+              <input id="emailform" type="email" class="form-control flex-fill mr-0 mr-sm-1 mb-3 mb-sm-0" name="inputEmail" placeholder="E-mail" required>
+              <textarea id="msgform" placeholder="MENSAGEM"  class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0 textarea-form" name="inputMessage"  cols="30" rows="4" style="margin-top: 30px;text-transform: uppercase;" required></textarea>
+              <button id="btnform" type="submit" class="btn btn-primary mx-auto button-contact" style="margin-top: 30px;">Enviar</button>
             </form>
           </div>
         </div>
@@ -146,6 +154,21 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
+
+    <script>
+      function getUrlVars() {
+      var vars = {};
+      var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+          vars[key] = value;
+      });
+      return vars;
+      }
+     var result=getUrlVars()["email_send"];
+     if(result==1)
+        alert("Mensagem enviada com sucesso\nEm breve entraremos em contato para responder.");
+      else if(result==0)
+        alert("Erro ao enviar mensagem\nTente novamente mais tarde.");
+  </script>
 
   </body>
 
