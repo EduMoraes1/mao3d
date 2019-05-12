@@ -57,3 +57,38 @@ alinhamento do form para celular*/
     margin-top: -40px !important;
   }
 }
+
+
+.navbar-pages{
+      background-color: #fff;
+}
+
+.img-midias{
+  width:100%;
+}
+
+.title-midias{
+  margin-top:150px;
+  text-align: center;
+}
+
+.posts{
+   margin-bottom: 40px;
+}
+
+#posts{
+      background: url(/mao3d/img/ajudar-fundo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.subtitle-post{
+  color:#000 !important;
+}
+
+.btn-post{
+    text-align: center;
+    margin-top: 10px;
+}
