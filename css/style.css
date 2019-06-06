@@ -92,3 +92,8 @@ alinhamento do form para celular*/
     text-align: center;
     margin-top: 10px;
 }
+
+.btn-lattes{
+    width: 50%;
+    margin-left: 20%;
+}
